@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="colorlib.com" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="./css/css/bootstrap.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      style="background-color: black; width: 100%; height: 3px; display: block;"
+    ></div>
+    <div
+      style="
+        background-color: yellow;
+        width: 100%;
+        height: 3px;
+        display: block;
+      "
+    ></div>
+    <div
+      style="background-color: red; width: 100%; height: 3px; display: block;"
+    ></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-9" style="padding-top: 30px;">
+          <div class="main">
+            <div style="text-align: center; font-size: 25px;">
+              <h2>New Permit Application</h2>
+            </div>
+            <div class="container">
+              <form
+                method="POST"
+                id="signup-form"
+                class="signup-form"
+                enctype="multipart/form-data"
+              >
+                <h3>
+                  Permit Type
+                </h3>
+                <fieldset>
+                  <div class="form-group">
+                    <label for="permit-type">Permit Type *</label>
+                    <select name="" class="form-control" id="">
+                      <option value="">Permit Type...</option>
+                      <option value="">Permit A</option>
+                      <option value="">Permit B</option>
+                    </select>
+                  </div>
+                </fieldset>
+
+                <h3>
+                  Cpontact Information
+                </h3>
+                <fieldset>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="surname">Surname*</label>
+                      <input class="form-control" type="text" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="other_names">Other Names*</label>
+                      <input class="form-control" type="text" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="email">Email*</label>
+                      <input class="form-control" type="email" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="phone">Phone*</label>
+                      <input class="form-control" type="number" name="" id="" />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <h3>
+                  Demographic Information
+                </h3>
+                <fieldset>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select name="" class="form-control" id="">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="dob">Date Of Birth*</label>
+                      <input class="form-control" type="date" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="street">Street*</label>
+                      <input class="form-control" type="text" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="country">Country*</label>
+                      <select class="form-control" name="" id="">
+                        <option value="">Uganda</option>
+                        <option value="">Kenya</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+                <h3>
+                  Documents
+                </h3>
+                <fieldset>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="nin">National Id Number*</label>
+                      <input type="text" name="" class="form-control" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="nin">National Id Image(Front)*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="back_image">National Id Image(Back)*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="medical">Medical Certificate*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="driver">Driver Certificate*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                </fieldset>
+                <h3>
+                  Payment Details
+                </h3>
+                <fieldset>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="nin">National Id Number*</label>
+                      <input type="text" name="" class="form-control" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="nin">National Id Image(Front)*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="back_image">National Id Image(Back)*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="medical">Medical Certificate*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group">
+                      <label for="driver">Driver Certificate*</label>
+                      <input type="file" class="form-control" name="" id="" />
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./css/js/bootstrap.js"></script>
+  </body>
+</html>
